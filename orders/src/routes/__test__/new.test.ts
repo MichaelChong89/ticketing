@@ -11,7 +11,7 @@ it('returns an error if the ticket does not exist', async () => {
     const ticketId = new mongoose.Types.ObjectId();
 
     await request(app)
-        .post('api/orders')
+        .post('/api/orders')
         .set('Cookie', await signin())
         .send({
             ticketId: ticketId
