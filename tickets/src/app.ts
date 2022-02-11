@@ -15,10 +15,15 @@ const app = express();
 app.set('trust proxy', true);
 app.use(json());
 app.use(
+    // cookieSession({
+    //     signed: false,
+    //     // secure: true, //When secure is set to true, Cookie only to be shared when making http request to our server vie https
+    //     secure: process.env.NODE_ENV !== 'test'
+    // })
     cookieSession({
         signed: false,
         // secure: true, //When secure is set to true, Cookie only to be shared when making http request to our server vie https
-        secure: process.env.NODE_ENV !== 'test'
+        secure: false
     })
 );
 
