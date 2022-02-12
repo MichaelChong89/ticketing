@@ -53,7 +53,7 @@ metadata:
     service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'true'
     service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.ticketing-app-prod.fun'
   labels:
-    helm.sh/chart: ingress-nginx-4.0.1
+    helm.sh/chart: ingress-nginx-4.0.0
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/version: 1.0.0
